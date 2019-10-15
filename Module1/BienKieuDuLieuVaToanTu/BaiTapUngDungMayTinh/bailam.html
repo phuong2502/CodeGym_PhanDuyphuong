@@ -3,7 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    
+    Caculator
+    <br>
+    <input type="text" id="ca" value="">
+    <input type="text" id="cu" value="">
+    <br><br>
+    <input type="button" onclick="Addition()" value="Addition (+)">
+    <input type="button" onclick="Subtraction()" value="Subtraction (-)">
+    <input type="button" onclick="Multiplication()" value="Multiplication (X)">
+    <input type="button" onclick="Division()" value="Division (/)">
+<script>
+   function Addition() {
+        let a =parseInt(document.getElementById("ca").value);
+        let b =parseInt(document.getElementById("cu").value);
+        let Result = a + b;
+        document.write("Result" + Result);
+    }
+    function Subtraction() {
+        let a =parseInt(document.getElementById("ca").value);
+        let b =parseInt(document.getElementById("cu").value);
+        let Result = a - b
+        document.write("Result" + Result);
+    }
+    function Multiplication() {
+        let a =parseInt(document.getElementById("ca").value);
+        let b =parseInt(document.getElementById("cu").value);
+        let Result = a * b
+        document.write("Result" + Result);
+    }
+    function Division(){
+        let a =parseInt(document.getElementById("ca").value);
+        let b =parseInt(document.getElementById("cu").value);
+        let Result = a / b
+        document.write("Result" + Result);
+    }
+</script>
 </head>
 <body>
 
