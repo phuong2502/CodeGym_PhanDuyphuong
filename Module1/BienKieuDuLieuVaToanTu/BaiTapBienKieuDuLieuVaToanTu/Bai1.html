@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script>
-        let physical = 7;
-        let chemistry = 8;
-        let biological = 9;
-        let medium = (physical + chemistry + biological) / 3;
-        let total = physical + chemistry + biological;
-        document.write('medium = ' + medium);
-        document.write('total = ' + total);
+        physical = prompt("Nhập Điểm Vật lý: ");
+        chemistry = prompt("Nhập Điểm Hóa Học: ");
+        biological = prompt("Nhập Điểm Sinh Học ");
+        let medium = (physical*1 + chemistry*1 + biological*1) / 3;
+        let total = physical*1 + chemistry*1 + biological*1;
+        alert('medium = ' + medium + '\n' + 'total = ' + total);
     </script>
 </head>
 <body>
