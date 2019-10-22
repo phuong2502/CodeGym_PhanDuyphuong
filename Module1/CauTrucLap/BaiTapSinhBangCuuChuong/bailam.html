@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script>
-        for (let i=1; i<=9; i++) {
-            let product = 1 * i;
-            document.write("1 x " + i + "=" + product + "<br>");
-        }
+        let txt="<table border='1'>"
 
+        for (let i=2; i<=9; i++) {
+            txt+="<tr>"
+           for (let j=1; j<=9; j++){
+               txt+="<td>"
+
+               txt+=i+"x"+j+"="+i*j+"</td>";
+           }
+            txt+="</tr>";
+        }
+      txt+="</table>";
+        document.write(txt);
     </script>
 </head>
 <body>
